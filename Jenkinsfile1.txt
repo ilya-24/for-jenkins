@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('1-Build') {
             steps {
+		echo "Step1"
                 echo "Start of Stage Build"
                 echo "Building......."
                 echo "End of Stage Build"
@@ -11,6 +12,7 @@ pipeline {
         }
         stage('2-Test') {
             steps {
+		echo "Step2"		
                 echo "Start of Stage Test"
                 echo "Testing......."
                 echo "End of Stage Build"
@@ -18,6 +20,7 @@ pipeline {
         }
         stage('3-Deploy') {
             steps {
+		echo "Step3"
                 echo "Start of Stage Deploy"
                 echo "Deploying......."
                 echo "End of Stage Build"
